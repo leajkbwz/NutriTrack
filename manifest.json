@@ -1,7 +1,7 @@
 {
-  "name": "NutriTrack — Suivi Calorique",
+  "name": "NutriTrack",
   "short_name": "NutriTrack",
-  "description": "Suivez vos apports caloriques journaliers",
+  "description": "Suivi de l'apport calorique journalier",
   "start_url": "/index.html",
   "display": "standalone",
   "background_color": "#0f1117",
