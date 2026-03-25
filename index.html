@@ -557,15 +557,15 @@
     <div class="input-group">
       <label class="input-label">Catégorie</label>
       <select class="input-field" id="food-category">
-        <option value="Petit-déjeuner">Petit-déjeuner</option>
-        <option value="Déjeuner">Déjeuner</option>
-        <option value="Dîner">Dîner</option>
-        <option value="Collation">Collation</option>
-        <option value="Boisson">Boisson</option>
-        <option value="Fruit &amp; Légume">Fruit &amp; Légume</option>
+        <option value="Plat">Plat</option>
         <option value="Protéine">Protéine</option>
         <option value="Féculent">Féculent</option>
-        <option value="Dessert">Dessert</option>
+        <option value="Légume">Légume</option>
+        <option value="Fruit">Fruit</option>
+        <option value="Petit-déj">Petit-déj</option>
+        <option value="Goûter/Dessert">Goûter/Dessert</option>
+        <option value="Boisson">Boisson</option>
+        <option value="CheatMeal">CheatMeal</option>
         <option value="Autre">Autre</option>
       </select>
     </div>
@@ -686,24 +686,24 @@ function getDefaultFoods() {
     { id: 'f2', name: 'Café au lait', category: 'Boisson', kcal: 55, desc: '1 tasse (200ml) + lait demi-écrémé', recipe: '' },
     { id: 'f3', name: 'Jus d\'orange', category: 'Boisson', kcal: 90, desc: '1 verre (200ml)', recipe: '' },
     { id: 'f4', name: 'Eau', category: 'Boisson', kcal: 0, desc: '1 verre (250ml)', recipe: '' },
-    { id: 'f5', name: 'Toast complet + beurre', category: 'Petit-déjeuner', kcal: 120, desc: '1 tranche de pain complet + 10g beurre', recipe: '' },
-    { id: 'f6', name: 'Yaourt nature', category: 'Petit-déjeuner', kcal: 60, desc: '1 pot (125g)', recipe: '' },
-    { id: 'f7', name: 'Bol de muesli', category: 'Petit-déjeuner', kcal: 320, desc: '60g muesli + 150ml lait demi-écrémé', recipe: '' },
-    { id: 'f8', name: 'Œuf à la coque', category: 'Petit-déjeuner', kcal: 75, desc: '1 œuf moyen', recipe: '' },
-    { id: 'f9', name: 'Banane', category: 'Fruit & Légume', kcal: 90, desc: '1 banane moyenne (120g)', recipe: '' },
-    { id: 'f10', name: 'Pomme', category: 'Fruit & Légume', kcal: 70, desc: '1 pomme (150g)', recipe: '' },
-    { id: 'f11', name: 'Salade verte', category: 'Fruit & Légume', kcal: 20, desc: 'Bol de salade (100g)', recipe: '' },
+    { id: 'f5', name: 'Toast complet + beurre', category: 'Petit-déj', kcal: 120, desc: '1 tranche de pain complet + 10g beurre', recipe: '' },
+    { id: 'f6', name: 'Yaourt nature', category: 'Petit-déj', kcal: 60, desc: '1 pot (125g)', recipe: '' },
+    { id: 'f7', name: 'Bol de muesli', category: 'Petit-déj', kcal: 320, desc: '60g muesli + 150ml lait demi-écrémé', recipe: '' },
+    { id: 'f8', name: 'Œuf à la coque', category: 'Petit-déj', kcal: 75, desc: '1 œuf moyen', recipe: '' },
+    { id: 'f9', name: 'Banane', category: 'Fruit', kcal: 90, desc: '1 banane moyenne (120g)', recipe: '' },
+    { id: 'f10', name: 'Pomme', category: 'Fruit', kcal: 70, desc: '1 pomme (150g)', recipe: '' },
+    { id: 'f11', name: 'Salade verte', category: 'Légume', kcal: 20, desc: 'Bol de salade (100g)', recipe: '' },
     { id: 'f12', name: 'Blanc de poulet grillé', category: 'Protéine', kcal: 165, desc: '100g', recipe: '' },
     { id: 'f13', name: 'Saumon vapeur', category: 'Protéine', kcal: 185, desc: '100g', recipe: '' },
     { id: 'f14', name: 'Lentilles cuites', category: 'Féculent', kcal: 115, desc: '100g', recipe: '' },
     { id: 'f15', name: 'Riz cuit', category: 'Féculent', kcal: 130, desc: '100g', recipe: '' },
     { id: 'f16', name: 'Pâtes cuites', category: 'Féculent', kcal: 150, desc: '100g (poids cuit)', recipe: '' },
-    { id: 'f17', name: 'Sandwich jambon-beurre', category: 'Déjeuner', kcal: 350, desc: '1 baguette 1/4 + jambon + beurre', recipe: '' },
-    { id: 'f18', name: 'Croque-monsieur', category: 'Déjeuner', kcal: 380, desc: '1 croque-monsieur', recipe: '' },
-    { id: 'f19', name: 'Soupe de légumes', category: 'Dîner', kcal: 80, desc: '1 bol (300ml)', recipe: '' },
-    { id: 'f20', name: 'Carré de chocolat', category: 'Dessert', kcal: 55, desc: '1 carré (10g)', recipe: '' },
-    { id: 'f21', name: 'Croissant', category: 'Petit-déjeuner', kcal: 230, desc: '1 croissant (60g)', recipe: '' },
-    { id: 'f22', name: 'Fromage blanc', category: 'Dessert', kcal: 70, desc: '100g nature', recipe: '' },
+    { id: 'f17', name: 'Sandwich jambon-beurre', category: 'Plat', kcal: 350, desc: '1 baguette 1/4 + jambon + beurre', recipe: '' },
+    { id: 'f18', name: 'Croque-monsieur', category: 'Plat', kcal: 380, desc: '1 croque-monsieur', recipe: '' },
+    { id: 'f19', name: 'Soupe de légumes', category: 'Plat', kcal: 80, desc: '1 bol (300ml)', recipe: '' },
+    { id: 'f20', name: 'Carré de chocolat', category: 'Goûter/Dessert', kcal: 55, desc: '1 carré (10g)', recipe: '' },
+    { id: 'f21', name: 'Croissant', category: 'Petit-déj', kcal: 230, desc: '1 croissant (60g)', recipe: '' },
+    { id: 'f22', name: 'Fromage blanc', category: 'Goûter/Dessert', kcal: 70, desc: '100g nature', recipe: '' },
   ];
 }
 
@@ -990,16 +990,16 @@ function confirmAdd() {
 //  CATALOGUE SCREEN
 // ════════════════════════════════════════════════════════════════
 const CAT_ICONS = {
-  'Petit-déjeuner': '🥐', 'Déjeuner': '🥗', 'Dîner': '🍲',
-  'Collation': '🍎', 'Boisson': '☕', 'Fruit & Légume': '🥦',
-  'Protéine': '🥩', 'Féculent': '🍚', 'Dessert': '🍰', 'Autre': '🍴'
+  'Plat': '🍽️', 'Protéine': '🥩', 'Féculent': '🍚',
+  'Légume': '🥦', 'Fruit': '🍎', 'Petit-déj': '🥐',
+  'Goûter/Dessert': '🍰', 'Boisson': '☕', 'CheatMeal': '🍔', 'Autre': '🍴'
 };
 const CAT_COLORS = {
-  'Petit-déjeuner': 'rgba(232,196,104,.15)', 'Déjeuner': 'rgba(94,201,136,.15)',
-  'Dîner': 'rgba(94,148,201,.15)', 'Boisson': 'rgba(148,94,201,.15)',
-  'Fruit & Légume': 'rgba(94,201,136,.15)', 'Protéine': 'rgba(232,104,104,.15)',
-  'Féculent': 'rgba(232,166,104,.15)', 'Dessert': 'rgba(201,94,148,.15)',
-  'Collation': 'rgba(104,196,232,.15)', 'Autre': 'rgba(160,160,160,.15)'
+  'Plat': 'rgba(94,148,201,.15)', 'Protéine': 'rgba(232,104,104,.15)',
+  'Féculent': 'rgba(232,166,104,.15)', 'Légume': 'rgba(94,201,136,.15)',
+  'Fruit': 'rgba(94,201,136,.15)', 'Petit-déj': 'rgba(232,196,104,.15)',
+  'Goûter/Dessert': 'rgba(201,94,148,.15)', 'Boisson': 'rgba(148,94,201,.15)',
+  'CheatMeal': 'rgba(232,80,80,.15)', 'Autre': 'rgba(160,160,160,.15)'
 };
 
 function renderCatalogue() {
