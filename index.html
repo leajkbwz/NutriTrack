@@ -597,7 +597,7 @@
     <p style="text-align:center;font-size:.8rem;color:var(--text-muted);margin-bottom:14px">— ou créer un nouveau profil —</p>
     <div class="input-group">
       <label class="input-label">Prénom</label>
-      <input class="input-field" id="new-profile-name" type="text" placeholder="ex : Thomas" />
+      <input class="input-field" id="new-profile-name" type="text" placeholder="ex : Marie" />
     </div>
     <div class="input-group">
       <label class="input-label">Objectif calorique journalier</label>
@@ -682,28 +682,8 @@ function saveFoods(f) { DB.set('foods', f); }
 
 function getDefaultFoods() {
   return [
-    { id: 'f1', name: 'Café noir', category: 'Boisson', kcal: 5, desc: '1 tasse (200ml)', recipe: '' },
-    { id: 'f2', name: 'Café au lait', category: 'Boisson', kcal: 55, desc: '1 tasse (200ml) + lait demi-écrémé', recipe: '' },
-    { id: 'f3', name: 'Jus d\'orange', category: 'Boisson', kcal: 90, desc: '1 verre (200ml)', recipe: '' },
-    { id: 'f4', name: 'Eau', category: 'Boisson', kcal: 0, desc: '1 verre (250ml)', recipe: '' },
-    { id: 'f5', name: 'Toast complet + beurre', category: 'Petit-déj', kcal: 120, desc: '1 tranche de pain complet + 10g beurre', recipe: '' },
-    { id: 'f6', name: 'Yaourt nature', category: 'Petit-déj', kcal: 60, desc: '1 pot (125g)', recipe: '' },
-    { id: 'f7', name: 'Bol de muesli', category: 'Petit-déj', kcal: 320, desc: '60g muesli + 150ml lait demi-écrémé', recipe: '' },
-    { id: 'f8', name: 'Œuf à la coque', category: 'Petit-déj', kcal: 75, desc: '1 œuf moyen', recipe: '' },
-    { id: 'f9', name: 'Banane', category: 'Fruit', kcal: 90, desc: '1 banane moyenne (120g)', recipe: '' },
-    { id: 'f10', name: 'Pomme', category: 'Fruit', kcal: 70, desc: '1 pomme (150g)', recipe: '' },
-    { id: 'f11', name: 'Salade verte', category: 'Légume', kcal: 20, desc: 'Bol de salade (100g)', recipe: '' },
-    { id: 'f12', name: 'Blanc de poulet grillé', category: 'Protéine', kcal: 165, desc: '100g', recipe: '' },
-    { id: 'f13', name: 'Saumon vapeur', category: 'Protéine', kcal: 185, desc: '100g', recipe: '' },
-    { id: 'f14', name: 'Lentilles cuites', category: 'Féculent', kcal: 115, desc: '100g', recipe: '' },
-    { id: 'f15', name: 'Riz cuit', category: 'Féculent', kcal: 130, desc: '100g', recipe: '' },
-    { id: 'f16', name: 'Pâtes cuites', category: 'Féculent', kcal: 150, desc: '100g (poids cuit)', recipe: '' },
-    { id: 'f17', name: 'Sandwich jambon-beurre', category: 'Plat', kcal: 350, desc: '1 baguette 1/4 + jambon + beurre', recipe: '' },
-    { id: 'f18', name: 'Croque-monsieur', category: 'Plat', kcal: 380, desc: '1 croque-monsieur', recipe: '' },
-    { id: 'f19', name: 'Soupe de légumes', category: 'Plat', kcal: 80, desc: '1 bol (300ml)', recipe: '' },
-    { id: 'f20', name: 'Carré de chocolat', category: 'Goûter/Dessert', kcal: 55, desc: '1 carré (10g)', recipe: '' },
-    { id: 'f21', name: 'Croissant', category: 'Petit-déj', kcal: 230, desc: '1 croissant (60g)', recipe: '' },
-    { id: 'f22', name: 'Fromage blanc', category: 'Goûter/Dessert', kcal: 70, desc: '100g nature', recipe: '' },
+    { id: 'f1', name: 'Matcha latte', category: 'Boisson', kcal: 64,5, desc: '150g lait d'avoine', recipe: '' },
+    { id: 'f2', name: 'Matcha latte fraise', category: 'Boisson', kcal: 81, desc: '150g lait d'avoine, 5g sirop de fraise', recipe: '' }
   ];
 }
 
