@@ -559,6 +559,7 @@
       <select class="input-field" id="food-category">
         <option value="Plat">Plat</option>
         <option value="Protéine">Protéine</option>
+        <option value="Produit laitier">Produit laitier</option>
         <option value="Féculent">Féculent</option>
         <option value="Légume">Légume</option>
         <option value="Fruit">Fruit</option>
@@ -693,7 +694,17 @@ function getDefaultFoods() {
     { id: 'f9', name: 'Patate douce', category: 'Féculent', kcal: 215, desc: '250g/portion', recipe: '' },
     { id: 'f10', name: 'Purée maison', category: 'Féculent', kcal: 230, desc: '250g pdt, 25g lait avoine, 5g gruyère', recipe: '' },
     { id: 'f11', name: 'Semoule', category: 'Féculent', kcal: 215, desc: '60g/portion', recipe: '' },
-    { id: 'f12', name: 'Wrap', category: 'Féculent', kcal: 200, desc: '1 wrap moyen', recipe: '' }
+    { id: 'f12', name: 'Wrap', category: 'Féculent', kcal: 200, desc: '1 wrap moyen', recipe: '' },
+    { id: 'f13', name: 'Blanc de dinde', category: 'Protéine', kcal: 82, desc: '2 tranches', recipe: '' },
+    { id: 'f14', name: 'Viande hachée', category: 'Protéine', kcal: 162.5, desc: '125g/portion', recipe: '' },
+    { id: 'f15', name: 'Poulet', category: 'Protéine', kcal: 126.5, desc: '115g/portion', recipe: '' },
+    { id: 'f16', name: 'Poisson pané', category: 'Protéine', kcal: 177, desc: '1 filet', recipe: '' },
+    { id: 'f17', name: 'Cottage cheese', category: 'Produit laitier', kcal: 40, desc: '45g/portion', recipe: '' },
+    { id: 'f18', name: 'Fromage blanc', category: 'Produit laitier', kcal: 24, desc: '50g/portion', recipe: '' },
+    { id: 'f19', name: 'Emmental rapé', category: 'Produit laitier', kcal: 18.5, desc: '5g/portion', recipe: '' },
+    { id: 'f20', name: 'Parmesan rapé', category: 'Produit laitier', kcal: 20, desc: '5g/portion', recipe: '' },
+    { id: 'f21', name: 'Alpro', category: 'Produit laitier', kcal: 66, desc: '100g/portion', recipe: '' },
+
   ];
 }
 
@@ -980,12 +991,13 @@ function confirmAdd() {
 //  CATALOGUE SCREEN
 // ════════════════════════════════════════════════════════════════
 const CAT_ICONS = {
-  'Plat': '🍽️', 'Protéine': '🥩', 'Féculent': '🍚',
+  'Plat': '🍽️', 'Protéine': '🥩', 'Produit laitier': '🧀', 'Féculent': '🍚',
   'Légume': '🥦', 'Fruit': '🍎', 'Petit-déj': '🥐',
   'Goûter/Dessert': '🍰', 'Boisson': '☕', 'CheatMeal': '🍔', 'Autre': '🍴'
 };
 const CAT_COLORS = {
   'Plat': 'rgba(94,148,201,.15)', 'Protéine': 'rgba(232,104,104,.15)',
+  'Produit laitier': 'rgba(94,135,104,.15)',
   'Féculent': 'rgba(232,166,104,.15)', 'Légume': 'rgba(94,201,136,.15)',
   'Fruit': 'rgba(94,201,136,.15)', 'Petit-déj': 'rgba(232,196,104,.15)',
   'Goûter/Dessert': 'rgba(201,94,148,.15)', 'Boisson': 'rgba(148,94,201,.15)',
